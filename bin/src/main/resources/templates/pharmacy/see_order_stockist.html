@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org"
+	th:replace="pharmacy/base::Layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>view medicine</title>
+<style type="text/css">
+.button-group {
+	display: flex;
+	gap: 1px;
+	align-items: center;
+}
+</style>
+</head>
+<body>
+
+	<section>
+		<div class="card mr-3 ml-4 ">
+			<div class="card-body">
+				<h1 class="text-center">Your Order List</h1>
+
+				<div th:if="${session.msg}" class="container">
+
+					<div th:classappend="${'alert-'+session.msg.type}"
+						class="alert text-center" role="alert">
+						<span th:text="${session.msg.content}"></span>
+					</div>
+					<th:block th:text="${@sessionRemover.removeMessageFromSession()}"></th:block>
+				</div>
+
+
+				<table class="table">
+					<thead class="thead-dark">
+						<tr>
+							<th scope="col">Id</th>
+							<th scope="col">Name</th>
+							<th scope="col">Quantity</th>
+
+							<th scope="col">Price</th>
+
+
+							<th scope="col">Total</th>
+
+
+
+							<th scope="col">Phone</th>
+							<th scope="col">Location</th>
+							<th scope="col">Created date</th>
+
+							<th scope="col">Arrive date</th>
+
+
+<!-- 							<th scope="col">Stockist Name</th>
+
+
+							<th scope="col">Pharmacy Name</th> -->
+
+							<th scope="col">Status</th>
+
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="p : ${orderr}">
+
+							<td th:text="MID+${p.poid}"></td>
+							<td th:text="${p.name}"></td>
+							<td th:text="${p.quantity}"></td>
+
+							<td th:text="Rs. + ${p.price}"></td>
+
+							<td th:text="Rs. +${p.price * p.quantity}"></td>
+
+
+							<td th:text="${p.phone}"></td>
+							<td th:text="${p.location}"></td>
+
+
+							<td th:text="${p.createdDate}"></td>
+							<td th:text="${p.arriveDate}"></td>
+							
+<!-- 							<td th:text="${p.stockist}"></td>
+
+
+							<td th:text="${p.pharmacyName}"></td>
+							 -->
+							<td th:text="${p.status}"></td>
+
+
+						</tr>
+					</tbody>
+
+				</table>
+
+
+
+
+				<div class="d-flex justify-content-start align-items-center ">
+
+					<form th:action="@{/pharmacy/create-pdf}" method="post">
+						<button type="submit" class="btn btn-primary btn-sm">Print</button>
+					</form>
+				</div>
+
+
+
+			</div>
+		</div>
+	</section>
+</body>
+</html>

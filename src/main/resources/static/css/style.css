@@ -1,0 +1,266 @@
+@charset "ISO-8859-1";
+/* Pharmacy */
+body {
+	background: url(../img/medications.jpg);
+	background-size: cover;
+	
+}
+
+.bg-primary {
+	background: #003399 !important;
+}
+
+.intro {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 22px;
+	line-height: 1.6;
+	color: #ffffff;
+	margin-bottom: 20px;
+	text-align: justify;
+	padding: 15px;
+}
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),
+		url(../img/goti.png);
+	background-size: cover;
+	color: white;
+}
+
+.mycard {
+	padding: 20px;
+	background: #FFFFFF;
+}
+
+.search-container {
+	position: relative;
+}
+
+.search-result {
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+}
+
+#login .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 550px !important;
+	border: 1px solid #9C9C9C;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+
+
+#login1 .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 300px !important;
+	border: 1px solid #9C9C9C;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+
+
+
+#login2 .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 550px;
+	border: 1px solid #9C9C9C;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+
+
+
+#login3 .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 550px;
+	border: 1px solid #9C9C9C;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+
+
+
+#login4 .container #login-row #login-column #login-box {
+	margin-top: 120px;
+	max-width: 600px;
+	height: 300px !important;
+	border: 1px solid #9C9C9C;
+	background-color: #FFFFFF;
+	border-radius: 10px;
+}
+
+/*naya  */
+.mycard {
+	background-color: #f2f2f2;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+label {
+	font-weight: bold;
+}
+
+.form-control {
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.dropdown select {
+	width: 100% !important;
+	height: 40px !important;
+	padding: 10px !important;
+	font-size: 14px !important;
+}
+
+.btn {
+	margin-top: 20px;
+}
+
+.bg-primary {
+	background-color: #007bff;
+}
+
+.bg-danger {
+	background-color: #dc3545;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.alert {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+
+.alert-success {
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+	color: #155724;
+}
+
+.alert-danger {
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+	color: #721c24;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-red {
+	color: red;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-italic {
+	font-style: italic;
+}
+
+.text-highlight {
+	background-color: #ffcc00;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
+/* naya khatam */
+#login .container #login-row #login-column #login-box #login-form {
+	padding: 20px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link
+	{
+	margin-top: -85px;
+}
+
+/*
+sidebar style
+*/
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		height: 100vh;
+		background: white;
+		position: fixed;
+		padding-top: 20px;
+	}
+	.content {
+		margin-left: 0% !important;
+	}
+}
+
+.sidebar {
+	width: 18%;
+	height: 100%;
+	background: white;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 999999999999999999999999999;
+}
+
+.sidebar a {
+	display: block;
+	width: 100%;
+	padding: 10px 23px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover {
+	background: #e2e2e2;
+}
+
+.sidebar .divider {
+	height: .5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+
+.content {
+	margin-left: 20%
+}
+
+.sidebar .crossBtn {
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size: 36px;
+	cursor: right;
+}
+
+.contact_image {
+	width: 30px;
+	height: 30px;
+	object-fit: cover;
+	border-radius: 50%;
+}
